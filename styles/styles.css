@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+body {
+    background-color: #C8B6A6;
+}
+
 /* HEADER */
 
 header {
@@ -14,8 +18,7 @@ header {
 .cabecalho {
     display: flex;
     justify-content: space-between;
-    margin: 2rem 3rem;
-    padding: 1rem;
+    padding: 3rem 4rem;
     width: auto;
     height: auto;
 }
@@ -34,19 +37,31 @@ header {
     font-family: 'Oxygen', sans-serif;
 }
 
-/* BODY */
+.cabecalho__item {
+    text-decoration: none;
+    color: #000000;
+}
 
-body {
+/* MAIN */
+
+main {
+    height: 80vh;
     display: flex;
     flex-direction: column;
     font-family: 'Karla', sans-serif;
     text-align: center;
     background-color: #C8B6A6;
+    background-image: url('../assets/coffee.png');
 }
 
 .welcome__bernies {
-    margin: 1rem 2rem;
-    width: auto;
+    margin: 1rem;
+    padding: 2rem;
+    width: 80%;
+    align-self: center;
+    margin-bottom: 3rem;
+    background-color: #8D7B68;
+    border-radius: 0.5rem;
 }
 
 .welcome__bernies h1 {
@@ -55,6 +70,49 @@ body {
     font: 700;
 }
 
+.eat__here {
+    display: flex;
+    flex-direction: column;
+    background-color: #8D7B68;
+    margin: 1rem;
+    padding: 2rem;
+    width: 80%;
+    align-self: center;
+    border-radius: 0.5rem;
+    list-style-type: none;
+}
+
+.eat__here h2 {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.eat__here h4 {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.eat__here__foods {
+    padding: 10px;
+}
 
 
 
+/* FOOTER */
+
+footer {
+    background-color: #8D7B68;;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1.5rem;
+}
+
+footer p {
+    font: 700;
+    font-family: 'Karla', sans-serif;
+}
